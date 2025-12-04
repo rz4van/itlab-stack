@@ -4,13 +4,13 @@ Infraestructura IT basada en Docker con GLPI, NetBox y Wazuh para gestión, moni
 
 Este proyecto integra:
 
-- 🧾 **GLPI** – Mesa de ayuda y gestión IT
-- 🌐 **NetBox** – Gestión de red e inventario
-- 🛡️ **Wazuh** – SIEM / XDR
-- 📂 **Samba** – Servidor de archivos
-- 🐳 **Docker + Docker Compose** – Orquestación
+-  **GLPI** – Mesa de ayuda y gestión IT
+-  **NetBox** – Gestión de red e inventario
+-  **Wazuh** – SIEM / XDR
+-  **Samba** – Servidor de archivos
+-  **Docker + Docker Compose** – Orquestación
 
----
+
 
 ## Objetivo del Proyecto
 
@@ -21,7 +21,7 @@ Crear una **plataforma unificada de infraestructura IT** reutilizable para:
 - Entornos de prueba SOC
 - Freelance IT / MSP
 
----
+
 
 
 ## Arquitectura General
@@ -39,7 +39,7 @@ GLPI se utiliza como sistema de mesa de ayuda (HelpDesk) y gestión de activos I
 
 **GLPI está integrado con Samba para permitir la autenticación de usuarios desde la red local.**
 
----
+
 
 ### NetBox — Inventario de Red
 NetBox se utiliza como sistema de documentación e inventario de infraestructura:
@@ -48,9 +48,9 @@ NetBox se utiliza como sistema de documentación e inventario de infraestructura
 - Racks, enlaces y topología
 - Documentación centralizada
 
-NetBox actúa como referencia de la infraestructura para técnicos y administradores.
+*NetBox actúa como referencia de la infraestructura para técnicos y administradores.*
 
----
+
 
 ### Wazuh — Seguridad y Monitoreo
 Wazuh se utiliza como plataforma de seguridad:
@@ -59,9 +59,9 @@ Wazuh se utiliza como plataforma de seguridad:
 - Integridad de archivos
 - Alertas de seguridad en tiempo real
 
-Permite supervisar tanto computadoras, servidores como los servicios desplegados en la red.
+*Permite supervisar tanto computadoras, servidores como los servicios desplegados en la red.*
 
----
+
 
 ### Flujo General del Sistema
 
@@ -70,20 +70,20 @@ Permite supervisar tanto computadoras, servidores como los servicios desplegados
 - Wazuh monitorea continuamente eventos de seguridad.
 - Samba centraliza la autenticación y los recursos compartidos.
 
----
+
 
 ## Integraciones del Proyecto
 
 ### GLPI + Samba
 
-GLPI está integrado con un servidor Samba para permitir:
+*GLPI está integrado con un servidor Samba para permitir:*
 
 - Autenticación de usuarios desde red local  
 - Asociación de técnicos y usuarios a recursos compartidos  
 - Centralización de accesos  
 - Gestión de archivos desde infraestructura interna 
 
----
+
 
 ## Requisitos
 
