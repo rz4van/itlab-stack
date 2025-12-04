@@ -39,9 +39,9 @@ GLPI se utiliza como sistema de mesa de ayuda (HelpDesk) y gestión de activos I
 
 
 **GLPI está integrado con Samba para permitir la autenticación de usuarios desde la red local.**
-
+#### GLPI Login
 ![GLPI > Login](docs/GLPI-Login.png)
-
+#### Dashboard - Metricas - Tickets
 ![GLPI > Dashboard](docs/GLPI-Dashboard.png)
 
 
@@ -55,9 +55,10 @@ NetBox se utiliza como sistema de documentación e inventario de infraestructura
 - Documentación centralizada
 
 *NetBox actúa como referencia de la infraestructura para técnicos y administradores.*
-
+#### Login
 ![Netbox > Login](docs/NetBox-Login.png)
 
+#### Dashboard de NetBox
 ![Netbox > Dash](docs/NetBox-Dashboard.png)
 
 ---
@@ -83,9 +84,13 @@ Wazuh se utiliza como plataforma de seguridad:
 - Autenticación de usuarios desde red local  
 - Asociación de técnicos y usuarios a recursos compartidos  
 - Centralización de accesos  
-- Gestión de archivos desde infraestructura interna 
+- Gestión de archivos desde infraestructura interna
 
+#### Panel de usuario
 ![GLPI > User](docs/GLPI-User.png)
+
+#### Estado del servicio
+![status](docs/system-status.png)
 
 ---
 
