@@ -12,7 +12,7 @@ Este proyecto integra:
 
 
 
-## Objetivo del Proyecto
+## 🎯 Objetivo del Proyecto
 
 Crear una **plataforma unificada de infraestructura IT** reutilizable para:
 
@@ -30,7 +30,7 @@ La arquitectura del proyecto está basada en un entorno de virtualización media
 
 Los servicios principales funcionan de manera independiente pero integrada:
 
-### GLPI > Gestión IT
+### 🖥️ GLPI > Gestión IT
 GLPI se utiliza como sistema de mesa de ayuda (HelpDesk) y gestión de activos IT. Permite:
 - Gestión de tickets de soporte
 - Inventario de equipos
@@ -41,7 +41,7 @@ GLPI se utiliza como sistema de mesa de ayuda (HelpDesk) y gestión de activos I
 
 
 
-### NetBox > Inventario de Red
+### 🌐 NetBox > Inventario de Red
 NetBox se utiliza como sistema de documentación e inventario de infraestructura:
 - Gestión de dispositivos de red
 - Direccionamiento IP
@@ -52,7 +52,7 @@ NetBox se utiliza como sistema de documentación e inventario de infraestructura
 
 
 
-### Wazuh > Seguridad y Monitoreo
+### 🛡️ Wazuh > Seguridad y Monitoreo
 Wazuh se utiliza como plataforma de seguridad:
 - Monitoreo de logs
 - Detección de intrusos
