@@ -22,7 +22,7 @@ Crear una **plataforma unificada de infraestructura IT** reutilizable para:
 - Freelance IT / MSP
 
 
-
+---
 
 ## Arquitectura General
 
@@ -37,9 +37,15 @@ GLPI se utiliza como sistema de mesa de ayuda (HelpDesk) y gestión de activos I
 - Gestión de usuarios y técnicos
 - Documentación interna
 
+
 **GLPI está integrado con Samba para permitir la autenticación de usuarios desde la red local.**
 
+![GLPI > Login](docs/GLPI-Login.png)
 
+![GLPI > Dashboard](docs/GLPI-Dashboard.png)
+
+
+---
 
 ### 🌐 NetBox > Inventario de Red
 NetBox se utiliza como sistema de documentación e inventario de infraestructura:
@@ -50,7 +56,11 @@ NetBox se utiliza como sistema de documentación e inventario de infraestructura
 
 *NetBox actúa como referencia de la infraestructura para técnicos y administradores.*
 
+![Netbox > Login](docs/NetBox-Login.png)
 
+![Netbox > Dash](docs/NetBox-Dashboard.png)
+
+---
 
 ### 🛡️ Wazuh > Seguridad y Monitoreo
 Wazuh se utiliza como plataforma de seguridad:
@@ -62,15 +72,7 @@ Wazuh se utiliza como plataforma de seguridad:
 *Permite supervisar tanto computadoras, servidores como los servicios desplegados en la red.*
 
 
-
-### Flujo General del Sistema
-
-- Los usuarios trabajan con GLPI para soporte técnico.
-- Los técnicos documentan infraestructura en NetBox.
-- Wazuh monitorea continuamente eventos de seguridad.
-- Samba centraliza la autenticación y los recursos compartidos.
-
-
+---
 
 ## Integraciones del Proyecto
 
@@ -83,7 +85,18 @@ Wazuh se utiliza como plataforma de seguridad:
 - Centralización de accesos  
 - Gestión de archivos desde infraestructura interna 
 
+![GLPI > User](docs/GLPI-User.png)
 
+---
+
+### Flujo General del Sistema
+
+- Los usuarios trabajan con GLPI para soporte técnico.
+- Los técnicos documentan infraestructura en NetBox.
+- Wazuh monitorea continuamente eventos de seguridad.
+- Samba centraliza la autenticación y los recursos compartidos.
+
+---
 
 ## Requisitos
 
