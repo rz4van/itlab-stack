@@ -1,0 +1,62 @@
+services:
+
+  # ==========================
+  # GLPI + MariaDB
+  # ==========================
+  glpi_db:
+    image: mariadb:10.7
+    container_name: glpi_db
+    restart: always
+    env_file: .env
+    environment:
+      MYSQL_ROOT_PASSWORD: ${GLPI_DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${GLPI_DB_NAME}
+      MYSQL_USER: ${GLPI_DB_USER}
+      MYSQL_PASSWORD: ${GLPI_DB_PASSWORD}
+    volumes:
+      - ./glpi/db:/var/lib/mysql
+    networks:
+      - itlab_net
+
+  glpi:
+    image: diouxx/glpi
+    container_name: glpi
+    restart: always
+    env_file: .env
+    ports:
+      - "8080:80"
+    depends_on:
+      - glpi_db
+    volumes:
+      - ./glpi/data:/var/www/html/glpi
+    networks:
+      - itlab_net
+
+  # ==========================
+  # NETBOX
+  # ==========================
+  netbox-db:
+    image: postgres:15
+    container_name: netbox-db
+    restart: always
+    env_file: .env
+    environment:
+      POSTGRES_DB: ${NETBOX_DB_NAME}
+      POSTGRES_USER: ${NETBOX_DB_USER}
+      POSTGRES_PASSWORD: ${NETBOX_DB_PASSWORD}
+    volumes:
+      - ./netbox/db:/var/lib/postgresql/data
+    networks:
+      - itlab_net
+
+  netbox:
+    image: netboxcommunity/netbox:latest
+    container_name: netbox
+    restart: always
+    env_file: .env
+    depends_on:
+      - netbox-db
+    ports:
+      - "8001:8080"
+    networks:
+      - itlab_net
