@@ -72,6 +72,11 @@ Wazuh se utiliza como plataforma de seguridad:
 
 *Permite supervisar tanto computadoras, servidores como los servicios desplegados en la red.*
 
+#### Info del agente windows
+![agente](docs/wazuh-dash.png)
+
+#### Eventos de seguridad
+![eventos](docs/eventos.png)
 
 ---
 
@@ -87,10 +92,12 @@ Wazuh se utiliza como plataforma de seguridad:
 - Gestión de archivos desde infraestructura interna
 
 #### Panel de usuario
-![GLPI > User](docs/GLPI-User.png)
+![GLPI > User](docs/user-dash.png)
 
-#### Estado del servicio
-![status](docs/system-status.png)
+#### Panel de administrador
+![GLPI > admin](docs/admin-dash.png)
+#### Lista de usuarios y estado del sistema
+![status](docs/Users-Status.png)
 
 ---
 
